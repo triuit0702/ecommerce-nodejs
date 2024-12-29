@@ -3,7 +3,7 @@
 const { model, Schema, Types} = require('mongoose');
 
 const DOCUMENT_NAME = 'Cart'
-const COLLECTION_NAME = 'Cart'
+const COLLECTION_NAME = 'Carts'
 
 // Declare the Schema of the Mongo model
 const cartSchema = new Schema({
