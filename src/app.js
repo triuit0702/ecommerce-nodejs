@@ -23,6 +23,12 @@ app.use(express.urlencoded({
 // morgan("dev")
 
 
+// test pub.sub redis
+require('./tests/inventory.test')
+const productTest = require('./tests/product.test');
+productTest.purchaseProduct('product:001', 10);
+
+
 // init db
 require('./dbs/init.mongodb')
 //require('./dbs/init.mongodb.lv0')
@@ -40,6 +46,8 @@ require('./dbs/init.mongodb')
 //     })
 // })
 app.use('',require('./routes'))
+
+
 
 // handling errors
 app.use((req, res, next) => {

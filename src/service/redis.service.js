@@ -5,6 +5,14 @@ const { promisify } = require('util');
 const { getProductById } = require('../models/repositories/product.repo');
 const redisClient = redis.createClient()
 
+// redisClient.ping( (err, result) => {
+//     if (err) {
+//         console.error('error connecting to reids:: ', err);
+//     } else {
+//         console.log('Connected to reids...');
+//     }
+// })
+
 const pexpire = promisify(redisClient.PEXPIRE).bind(redisClient);
 const setnxAsync = promisify(redisClient.SETNX).bind(redisClient)
 
