@@ -11,6 +11,7 @@ const { authenticationV2 } = require('../../auth/authUtils')
 // authentication
 router.use(authenticationV2);
 router.post('',  asyncHandler(commentController.createComment))
+router.delete('',  asyncHandler(commentController.deleteComment))
 router.get('',  asyncHandler(commentController.getCommentByParentId))
 
 
