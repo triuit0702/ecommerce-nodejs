@@ -1,0 +1,13 @@
+ {
+	 "productId": "674a55d5ec671fbb2bd031f2",
+             "userId": 1001 ,
+             "content": "comment 1",
+             "parentCommentId": null
+}
+
+{
+  "productId": "674a55d5ec671fbb2bd031f2",
+  "userId": 1001,
+  "content": "comment 1.1.1",
+  "parentCommentId": "6793a0b07869c8c0813a382d"
+}

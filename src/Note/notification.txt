@@ -1,0 +1,16 @@
+Các cách: viec lấy notii và inset noti chậm thì có một số cách khắc phuc sau đây:
+
+1. đanh index để query nhanh: đãm bảo các trường quan trọng đánh insex
+2. phân trang: 
+3. sharing database: phân tán dữ liêu trên nhiều node
+4.  cache: lưu trữ dự liêu truy vấn thông báo dùng thường xuyên
+5. bất đồng bộ
+
+PHân tích hành vi use áp dụng cho push và pull đễ giảm lượng user insert
+
+- những tk nào thuồng xuyên truy cập (hoạt động thường xuyên) thì push notification sẵn cho nó
+- ít truy cập (hoạt động ít) thì khi login sẽ pul lúc đó 
+- hoạt động ít nhưng đăng ký nhận khuyến mãi thì chúng ta sẽ ưu tiên cho nó nên dùng push
+
+cách nâng cao là dùng message queue
+- ví dụ đã push noti 1 rồi thì message queue có nhiệm vụ đánh dấu lần sau không push nữa
