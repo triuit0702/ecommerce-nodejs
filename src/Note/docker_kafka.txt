@@ -1,0 +1,4 @@
+docker network create kafka-network
+- dùng để tạo ra một mạng chyên dùng cho kafka, vấn để bảo mật ,..cho phép quyền truy cập mạng, các firewall tường lửa một cách độc lập hơn
+- tại vì các container hay tách biệt nhau một cách mặc định. các container có không gian riêng, tên mạng riêng và các bộ chứa 
+giao tiếp với nhau nên  tạo ra network chung để làm việc đó
